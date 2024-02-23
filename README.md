@@ -40,7 +40,7 @@ Concatenar DataFrames: Se utiliza la función pd.concat() para concatenar todos 
 Retornar DataFrame: Se retorna el DataFrame final que contiene todos los datos de los archivos .txt en la carpeta.
 Función os.walk():
 
-La función os.walk() es una función de la biblioteca os que se utiliza para recorrer una carpeta y sus subcarpetas. La función devuelve un generador que produce una tupla para cada archivo o subcarpeta en la carpeta. La tupla contiene tres elementos:
+La función ```python os.walk()``` es una función de la biblioteca os que se utiliza para recorrer una carpeta y sus subcarpetas. La función devuelve un generador que produce una tupla para cada archivo o subcarpeta en la carpeta. La tupla contiene tres elementos:
 
 Nombre de la carpeta: El nombre de la carpeta actual.
 Lista de subcarpetas: Una lista de las subcarpetas en la carpeta actual.
