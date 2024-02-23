@@ -73,7 +73,7 @@ Un DataFrame que contiene todos los datos de los archivos .txt en la carpeta.
 
 Pasos a paso:
 Importar librerías: Se importan las librerías os y pandas.
-Recorrer los archivos de la carpeta: Se utiliza la función os.walk() para recorrer la carpeta especificada y obtener una lista de todos los archivos y subcarpetas.
+Recorrer los archivos de la carpeta: Se utiliza la función ```os.walk()``` para recorrer la carpeta especificada y obtener una lista de todos los archivos y subcarpetas.
 Validar archivos .txt: Se comprueba si cada archivo en la lista tiene la extensión .txt.
 Leer archivos .txt: Se utiliza la función ```open()``` para abrir cada archivo .txt en modo lectura.
 Convertir archivos a DataFrame: Se utiliza la función ```pd.read_csv()``` para convertir cada archivo .txt en un DataFrame.
