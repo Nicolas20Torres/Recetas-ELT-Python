@@ -3,6 +3,9 @@ Descripción:
 La función ```leer_carpeta(carpeta)``` lee todos los archivos .txt en una carpeta y los concatena en un solo DataFrame.
 
 ```python
+import pandas as pd
+import os
+
 def leer_carpeta(carpeta):
     DataFrame = []
     # Recorre los archivos de la carpeta
@@ -59,7 +62,7 @@ Salida:
 3       Valor10     Valor11     Valor12
 4       Valor13     Valor14     Valor15
 ```
-Función leer_carpeta(carpeta)
+Función ```leer_carpeta(carpeta)```
 
 Descripción:
 La función ```leer_carpeta(carpeta)``` lee todos los archivos .txt en una carpeta y los concatena en un solo DataFrame.
