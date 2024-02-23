@@ -2,6 +2,25 @@
 Descripción:
 
 La función leer_carpeta(carpeta) lee todos los archivos .txt en una carpeta y los concatena en un solo DataFrame.
+```python
+def leer_carpeta(carpeta):
+    DataFrame = []
+    # Recorre los archivos de la carpeta
+    for Nombre_Carpeta, _, Nombre_Archivos in os.walk(carpeta):
+        for Nombre_Archivo in Nombre_Archivos:
+            # Validar Archivo .txt
+            if Nombre_Archivo.endswith('.txt'):
+                Archivo_Carpeta = os.path.join(Nombre_Carpeta, Nombre_Archivo)
+                # print("Archivo encontrado:", Archivo_Carpeta)  # Imprimir la ruta del archivo
+                with open(Archivo_Carpeta,'r', encoding='utf-8') as file:
+                    df = pd.read_csv(file, sep='|')
+                # crear un DataFrame con pandas
+                df_ = pd.DataFrame(data=df)
+                # Agregar el df al arreglo vacio DataFrame 
+                DataFrame.append(df_)
+    df_final = pd.concat(DataFrame, axis=0)
+    return df_final
+```
 
 Parámetros:
 
