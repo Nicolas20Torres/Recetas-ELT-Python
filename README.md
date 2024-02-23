@@ -32,21 +32,21 @@ El contexto with se utiliza para garantizar que los recursos se abran y cierren 
 
 Ejemplo de uso:
 
-Python
+```Python
 carpeta = r"C:\Users\usuario\Desktop\Carpeta_con_archivos"
 df = leer_carpeta(carpeta)
 
 print(df.head())
-Usa el código con precaución.
+```
 Salida:
-
+```
    Columna1  Columna2  Columna3
 0       Valor1      Valor2      Valor3
 1       Valor4      Valor5      Valor6
 2       Valor7      Valor8      Valor9
 3       Valor10     Valor11     Valor12
 4       Valor13     Valor14     Valor15
-Archivo markdown
+```
 Función leer_carpeta(carpeta)
 
 Descripción:
